@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      .myDIV {
+        border: 2 px outset red;
+        background-color: aqua;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>COVID 19 Pre-Vacination Checklist</h2>
+    <form action="">
+      <label for="fname">First Name:</label><br />
+      <input type="text" id="fname" name="fname" /><br />
+      <label for="lname">Last Name</label><br />
+      <input type="text" id="lname" name="lname" />
+
+      <h5>Choose your vaccination status:</h5>
+      <input type="radio" id="1st" name="vac_status" , value="1st" />
+      <label for="1st">1st Vaccination</label>
+      <input type="radio" id="2st" name="vac_status" , value="2st" />
+      <label for="2st">2st Vaccination</label>
+      <div class="myDIV">
+        <h4>How does the vaccine affect your body?</h4>
+        <p>If anything happens <span style="color:red">just tell us.</span> </span>No worry we will reponse soon.</p>
+      </div>
+
+      <input type="checkbox" id="good" name="affect" value="good" />
+      <label for="good">Good! I am okay.</label>
+      <input type="checkbox" id="bad" name="affect" value="bad" />
+      <label for="bad">No, it is kinda bad for me.</label><br />
+
+      <h4>Have a good day! Bye.</h4>
+
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
